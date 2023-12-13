@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-photo {
+    position: relative;
+    width: 50%; /* Adjust the width of the image container as needed */
+}
+
+.leaves {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.odin-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: auto;
+}
+
+.author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+a {
+    color: #45a049;
+}
