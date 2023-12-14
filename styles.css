@@ -1,68 +1,83 @@
-body {
+@font-face {
+    font-family: "Norse Bold";
+    src: url(Norse-Bold.otf);
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
-    font-family: Arial, sans-serif;
 }
 
-.container {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: white;
 }
 
-.background-photo {
-    position: relative;
-    width: 50%; /* Adjust the width of the image container as needed */
-}
-
-.leaves {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.odin-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px;
-    height: auto;
-}
-
-.author {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.form-container {
-    flex: 1;
-    padding: 20px;
-    color: white;
-}
-
-.text {
-    margin-bottom: 20px;
-}
-
-form {
+.wrapper {
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
 }
 
-label {
-    margin-bottom: 10px;
+.hero-image {
+    background-position: center;
+    background-image: url("leaf-image.jpeg");
+    background-size: cover;
+    color: white;
+    width: 500px;
+    margin-right: 50px;
+    position: relative;
 }
+
+.logo-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Norse Bold";
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo-bar > img {
+    width: 100px;
+}
+
+h1 {
+    font-family: "Norse Bold";
+}
+
+a {
+    color: white;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 button {
     background-color: #4CAF50;
@@ -76,6 +91,8 @@ button:hover {
     background-color: #45a049; 
 }
 
-a {
-    color: #45a049;
+
+
+.text p {
+    font-weight: bold;
 }

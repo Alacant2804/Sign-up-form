@@ -6,58 +6,79 @@
     <link rel="stylesheet" href="styles.css">
     <title>Odin Form</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="wrapper">
+        <!--Image section-->
+        <div class="hero-image">
+            <div class="logo-bar">
+                <img src="odin-lined.png" alt="The Odin Project logo">
+                <h1>ODIN</h1>
+            </div>
 
-        <div class="background-photo">
-            <img src="Leaves-photo.jpeg" alt="leaves photo" class="leaves">
-            <p><img src="odin-lined.png" alt="odin logo" class="odin-logo"> ODIN</p>
-            <p class="author">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            <p class="attribution">
+                Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
         </div>
 
-    <div class="form-container">
-        <div class="text">
-        <p>This is not a real online service! You know tou need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+        <!-- Form section -->
+        <main>
+            <section class="description">
+                <p>
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest
+                    dreams. <br> Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+            </section>
 
-        
-        </div>
-        
-        <div class="form">
-            <p>Let's do this!</p>
+            <form action="#" method="post">
+                <div class="form-container">
+                    <h3>Let's do this!</h3>
 
-            <form action="" method="post">
-                <label for="first-name"> First Name
-                    <input type="text" placeholder="Thor" id="first-name" name="first-name">
-                </label>
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div class="form-cell">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                    </fieldset>
 
-                <label for="last-name"> Last Name
-                    <input type="text" placeholder="Odinson" id="last-name" name="last-name">
-                </label>
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-cell">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name=" phone">
+                        </div>
+                    </fieldset>
 
-                <label for="email"> Email
-                    <input type="email" placeholder="thor@example.com" id="email" name="email">
-                </label>
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="form-cell">
+                            <label for="confirm_pw">Confirm Password</label>
+                            <input type="text" id="confirm_pw" name="confirm_pw">
+                        </div>
+                    </fieldset>
+                </div>
 
-                <label for="phone-number"> Phone Number
-                    <input type="tel" placeholder="+1 222 222 2222" id="phone-number" name="phone-number">
-                </label>
-
-                <label for="password"> Password
-                    <input type="password" id="first-name" name="first-name">
-                </label>
-
-                <label for="confirm-password"> Confirm Password
-                    <input type="text" id="confirm-password" name="confirm-password">
-                </label>
+                <div class="button-area">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
             </form>
-        </div>
-
-        <div>
-            <button>Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
+        </main>
     </div>
-    </div>  
+
 </body>
 </html>
