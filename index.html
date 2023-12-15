@@ -36,38 +36,38 @@
 
             <form action="#" method="post">
                 <div class="form-container">
-                    <h3>Let's do this!</h3>
+                    <p>Let's do this!</p>
 
                     <fieldset>
                         <div class="form-cell">
-                            <label for="first_name">First Name</label>
+                            <label for="first_name">FIRST NAME</label>
                             <input type="text" name="first_name" id="first_name">
                         </div>
                         <div class="form-cell">
-                            <label for="last_name">Last Name</label>
+                            <label for="last_name">LAST NAME</label>
                             <input type="text" id="last_name" name="last_name">
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <div class="form-cell">
-                            <label for="email">Email</label>
+                            <label for="email">EMAIL</label>
                             <input type="email" name="email" id="email">
                         </div>
                         <div class="form-cell">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">PHONE NUMBER</label>
                             <input type="text" id="phone" name=" phone">
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <div class="form-cell">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" minlength="5">
                         </div>
                         <div class="form-cell">
-                            <label for="confirm_pw">Confirm Password</label>
-                            <input type="text" id="confirm_pw" name="confirm_pw">
+                            <label for="confirm_pw">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_pw" name="confirm_pw">
                         </div>
                     </fieldset>
                 </div>
@@ -79,6 +79,18 @@
             </form>
         </main>
     </div>
-
 </body>
+
+<script>
+    let validation = function() {
+        let password = document.getElementById('password');
+        let confirmPassword = document.getElementById('confirm_pw');
+
+        if (password.textContent !== confirmPassword.textContent) {
+            confirmPassword.className('error');
+        } else {
+            confirmPassword.remove('error');
+        }
+    }
+</script>
 </html>
