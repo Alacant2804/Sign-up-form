@@ -68,6 +68,7 @@
                         <div class="form-cell">
                             <label for="confirm_pw">CONFIRM PASSWORD</label>
                             <input type="password" id="confirm_pw" name="confirm_pw">
+                            <div class="msg"></div>
                         </div>
                     </fieldset>
                 </div>
@@ -82,15 +83,20 @@
 </body>
 
 <script>
-    let validation = function() {
-        let password = document.getElementById('password');
-        let confirmPassword = document.getElementById('confirm_pw');
+    let password = document.getElementById('password');
+    let confirmPassword = document.getElementById('confirm_pw');
+    let message = document.querySelector('.msg');
 
-        if (password.textContent !== confirmPassword.textContent) {
-            confirmPassword.className('error');
+    let validation = function() {
+        if (password.value !== confirmPassword.value) {
+            message.textContent = "Password does not match";
+            confirmPassword.classList.add('error');
         } else {
-            confirmPassword.remove('error');
+            message.textContent = "";
+            confirmPassword.classList.remove('error');
         }
     }
+
+    confirmPassword.addEventListener('input', validation);
 </script>
 </html>

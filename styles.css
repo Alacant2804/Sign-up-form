@@ -144,3 +144,13 @@ button:hover {
 .button-area a {
     color: #596D48
 }
+
+.error {
+    border: 2px solid red;
+}
+
+.msg {
+    color: red; 
+    font-size: 14px; 
+    margin-top: 5px; 
+}
